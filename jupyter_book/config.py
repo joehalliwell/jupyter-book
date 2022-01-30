@@ -283,7 +283,7 @@ def yaml_to_sphinx(yaml: dict):
                 theme_options[spx_key] = html[yml_key]
 
         # Pass through the buttons
-        btns = ["use_repository_button", "use_edit_page_button", "use_issues_button"]
+        btns = ["use_repository_button", "use_edit_page_button", "use_issues_button", "use_download_button", "use_fullscreen_button"]
         use_buttons = {btn: html.get(btn) for btn in btns if btn in html}
         if any(use_buttons.values()):
             if not repository_config.get("url"):
